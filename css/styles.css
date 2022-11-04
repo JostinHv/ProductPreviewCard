@@ -107,6 +107,9 @@ body {
     background-color: hsl(159, 39%, 21%);
 }
 @media (max-width: 375px) {
+    .content_main {
+        height: 950px;
+    }
     .landpage {
         width: 90%;
         display: flex;
