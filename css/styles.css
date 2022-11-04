@@ -90,21 +90,19 @@ body {
     flex-direction: row;
     background-color: var(--Dark-cyan);
     height: 45px;
-    text-decoration: none;
     align-items: center;
     text-align: center;
     justify-content: center;
     border-radius: 10px;
     outline: none;
     border: none;
-}
-
-.cart {
-    padding-left: 5px;
     color: white;
     font-weight: 800;
 }
 
+.button_buy img{
+    padding-right: 10px;
+}
 .button_buy:hover {
     background-color: hsl(159, 39%, 21%);
 }
