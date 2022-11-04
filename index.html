@@ -31,10 +31,10 @@
 <body>
   <main class="content_main">
     <div class="landpage">
-      <img src="/images/image-product-desktop.jpg"
-      alt=""
-      srcset="images/image-product-desktop.jpg 1440w, images/image-product-mobile.jpg 375w"
-      class="product">
+      <picture>
+        <source media="(max-width: 375px)" srcset="images/image-product-mobile.jpg" class="product">
+        <img src="images/image-product-desktop.jpg" alt="" class="product">
+      </picture>
       <div class="content_text">
         <p class="fragance">PERFUME</p>
         <h1 class="titule"> Gabrielle Essence Ea De Parfum</h1>
