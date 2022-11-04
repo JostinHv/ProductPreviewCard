@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: var(--Cream);
+}
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+
+}
+
+.content_main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 95% 5%;
+}
+
+.landpage {
+    box-shadow: 0px 0px 10px 0.1px rgba(0,0,0,0.1);
+    margin: auto;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.content_text {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 30px;
+    justify-content: space-evenly;
+}
+
+.fragance {
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--Dark-grayish-blue);
+}
+
+.content_text h1 {
+    font-family: 'Fraunces';
+    line-height: 33px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.product {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
+.price_now {
+    color: var(--Dark-cyan);
+    font-size: 30px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+}
+
+.price_after {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+
+.button_buy {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Dark-cyan);
+    height: 45px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.cart {
+    padding-left: 5px;
+    color: white;
+    font-weight: 800;
+}
+
+.button_buy:hover {
+    background-color: hsl(159, 39%, 21%);
+}
+@media (max-width: 375px) {
+    .landpage {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content_text {
+        height: 340px;
+        padding: 20px;
+    }
+    .content_text h1 {
+        font-size: 30px;
+    }
+    .price {
+        grid-template-columns: 45% 20%;
+    }
+    .product {
+        border-radius: 10px 10px 0 0;
+    }
+}
